@@ -22,7 +22,7 @@ pipeline {
         container('jenkinsxio/jx:2.0.119')
         container('nodejs') {
           sh "npm install"
-          sh "CI=true DISPLAY=:99 npm test"
+          // sh "CI=true DISPLAY=:99 npm test"
           sh "export VERSION=$PREVIEW_VERSION && skaffold build -f skaffold.yaml"
           sh "jx step post build --image $DOCKER_REGISTRY/$ORG/$APP_NAME:$PREVIEW_VERSION"
           dir('./charts/preview') {
@@ -51,7 +51,7 @@ pipeline {
         container('jenkinsxio/jx:2.0.119')
         container('nodejs') {
           sh "npm install"
-          sh "CI=true DISPLAY=:99 npm test"
+          // sh "CI=true DISPLAY=:99 npm test"
           sh "export VERSION=`cat VERSION` && skaffold build -f skaffold.yaml"
           sh "jx step post build --image $DOCKER_REGISTRY/$ORG/$APP_NAME:\$(cat VERSION)"
         }
