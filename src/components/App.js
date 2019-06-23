@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import logo from '../assets/logo.svg';
 import './App.css';
+
+import React, { Component } from 'react';
+
+import logo from '../assets/logo.svg';
 
 class App extends Component {
   render() {
@@ -9,6 +11,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Jenkins X with React</h1>
+          <h2>This is my first edit</h2>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/components/App.js</code> and save to reload.
