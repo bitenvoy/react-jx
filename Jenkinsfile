@@ -76,9 +76,10 @@ pipeline {
       }
     }
   }
-  post {
-        always {
-          cleanWs()
-        }
-  }
+  // browken Workspace cleanup plugin - 0.37 ?
+  // post {
+  //       always {
+  //         cleanWs()
+  //       }
+  // }
 }
