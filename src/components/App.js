@@ -11,7 +11,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Jenkins X with React</h1>
-          <h2>This is another edit</h2>
+          <h2>Hi Arthur!</h2>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/components/App.js</code> and save to reload.
